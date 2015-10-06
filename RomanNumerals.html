@@ -1,0 +1,61 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<script src="scripts/jquery-1.11.3.js"></script>
+		<script src="scripts/myscript.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/example.css">
+	</head>
+
+	<body>
+		<div style="text-align:center;">
+              	<img  src="images/Roman-numerals.jpg">
+              	<img src="images/romanperson.jpg">
+        </div>
+		<div class="well bs-component">
+              <form class="form-horizontal">
+                <fieldset>
+                  <legend>Arabic Numbers to Roman numerals</legend>
+               		<div class="form-group">
+                    	<label for="inputNumber" class="col-lg-2 control-label">Number</label>
+                    	<div class="col-lg-10">
+                      		<input type="text" class="form-control" id="inputNumber" placeholder="Enter the number you want to convert to roman">
+                    	</div>
+                  	</div>
+                  	<div class="form-group">
+                   	  <label class="col-lg-2 control-label">Which way would you like to get the result?</label>
+                   	 	<div class="col-lg-10">
+	                     	<div class="radio">
+	                        	 <label>
+	                         	 <input type="checkbox" name="optionsRadios" id="normalWay" >
+	                         	 Normal way
+	                        	 </label>
+		                    </div>
+		                    <div class="radio">
+		                        <label>
+		                          <input type="checkbox" name="optionsRadios" id="separated">
+		                          Result displayed by parts
+		                        </label>
+	                      </div>
+                     	</div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-lg-10 col-lg-offset-2">
+                      <button type="reset" class="btn btn-default">Clean Blank</button>
+                      <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            	<div id="source-button" class="btn btn-primary btn-xs" style="display: none;">&lt; &gt;</div>
+            </div>
+        </div>
+
+        <table id="tabla" style ="width:100%">
+           <tr>
+              <th>Number entered</th>
+              <th>Roman Numeral</th>
+           </tr>
+        </table>
+	</body>
+</html>
